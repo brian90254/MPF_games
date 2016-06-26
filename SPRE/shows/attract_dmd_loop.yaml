@@ -1,0 +1,277 @@
+# show_version=4
+- time: 0
+
+  slides:
+    attract_dmd_loop_slide_1:
+      widgets:    
+        - type: video
+          video: SPRE_AttractMode_2
+
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+
+- time: '+69'
+
+  slides:
+    attract_dmd_loop_slide_2:
+      widgets:    
+        - type: video
+          #video: welcome
+          #video: MatadoraMovieSm
+          #video: SPRE_AttractMode_1
+          video: SPRE_AttractMode_2
+          #z: 200
+          
+          #end_behavior: loop
+          
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+              
+        #- type: text
+          #text: intro video
+          #z: 100
+          #y: bottom-10
+#- time: '+4'
+#- time: '+10'
+- time: '+69'
+
+  slides:
+    attract_dmd_loop_slide_3:
+      widgets:    
+        - type: video
+          #video: welcome
+          #video: MatadoraMovieSm
+          #video: SPRE_AttractMode_1
+          video: SPRE_AttractMode_2
+          #z: 200
+          
+          #end_behavior: loop
+          
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+              
+        #- type: text
+          #text: intro video
+          #z: 100
+          #y: bottom-10
+#- time: '+4'
+#- time: '+10'
+- time: '+69'
+
+  slides:
+    attract_dmd_loop_slide_4:
+      widgets:    
+        - type: video
+          #video: welcome
+          #video: MatadoraMovieSm
+          #video: SPRE_AttractMode_1
+          video: SPRE_AttractMode_2
+          #z: 200
+          
+          #end_behavior: loop
+          
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+              
+        #- type: text
+          #text: intro video
+          #z: 100
+          #y: bottom-10
+#- time: '+4'
+#- time: '+10'
+- time: '+69'
+
+  slides:
+    attract_dmd_loop_slide_5:
+      widgets:    
+        - type: video
+          #video: welcome
+          #video: MatadoraMovieSm
+          #video: SPRE_AttractMode_1
+          video: SPRE_AttractMode_2
+          #z: 200
+          
+          #end_behavior: loop
+          
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+              
+        #- type: text
+          #text: intro video
+          #z: 100
+          #y: bottom-10
+#- time: '+4'
+#- time: '+10'
+- time: '+69'
+
+  slides:
+    attract_dmd_loop_slide_6:
+      widgets:    
+        - type: video
+          #video: welcome
+          #video: MatadoraMovieSm
+          #video: SPRE_AttractMode_1
+          video: SPRE_AttractMode_2
+          #z: 200
+          
+          #end_behavior: loop
+          
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+              
+        #- type: text
+          #text: intro video
+          #z: 100
+          #y: bottom-10
+#- time: '+4'
+#- time: '+10'
+- time: '+69'
+
+  slides:
+    attract_dmd_loop_slide_7:
+      widgets:    
+        - type: video
+          #video: welcome
+          #video: MatadoraMovieSm
+          #video: SPRE_AttractMode_1
+          video: SPRE_AttractMode_2
+          #z: 200
+          
+          #end_behavior: loop
+          
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+              
+        #- type: text
+          #text: intro video
+          #z: 100
+          #y: bottom-10
+#- time: '+4'
+#- time: '+10'
+- time: '+69'
+
+  slides:
+    attract_dmd_loop_slide_8:
+      widgets:    
+        - type: video
+          #video: welcome
+          #video: MatadoraMovieSm
+          #video: SPRE_AttractMode_1
+          video: SPRE_AttractMode_2
+          #z: 200
+          
+          #end_behavior: loop
+          
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+              
+        #- type: text
+          #text: intro video
+          #z: 100
+          #y: bottom-10
+#- time: '+4'
+#- time: '+10'
+- time: '+69'
+
+  slides:
+    attract_dmd_loop_slide_9:
+      widgets:    
+        - type: video
+          #video: welcome
+          #video: MatadoraMovieSm
+          #video: SPRE_AttractMode_1
+          video: SPRE_AttractMode_2
+          #z: 200
+          
+          #end_behavior: loop
+          
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+              
+        #- type: text
+          #text: intro video
+          #z: 100
+          #y: bottom-10
+#- time: '+4'
+#- time: '+10'
+- time: '+69'
+
+  slides:
+    attract_dmd_loop_slide_10:
+      widgets:    
+        - type: video
+          #video: welcome
+          #video: MatadoraMovieSm
+          #video: SPRE_AttractMode_1
+          video: SPRE_AttractMode_2
+          #z: 200
+          
+          #end_behavior: loop
+          
+          control_events:
+            - event: slide_play
+              action: seek
+              value: 0
+            - event: slide_play
+              action: play
+              
+        #- type: text
+          #text: intro video
+          #z: 100
+          #y: bottom-10
+#- time: '+4'
+#- time: '+10'
+- time: '+69'
+
+
+#  slides:
+#    attract_dmd_loop_slide_6:
+#      widgets:    
+#        - type: video
+#          #video: welcome
+#          #video: MatadoraMovieSm
+#          video: SPRE_AttractMode_1
+#          #z: 200
+#        - type: text
+#          text: intro video
+#          #z: 100
+#          #y: bottom-10
+##- time: '+4'
+##- time: '+10'
+#- time: '+5'

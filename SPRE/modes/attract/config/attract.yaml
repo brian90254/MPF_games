@@ -1,0 +1,82 @@
+#config_version=4
+mode:
+  priority: 10000
+
+
+show_player:
+  mode_attract_started:
+    attract_dmd_loop:
+      action: play
+      loops: -1
+      #loops: 10
+      #speed: 1
+      
+    #gi_fade:
+    #  loops: -1
+    #  speed: 1
+    #arrow_sweep:
+    #  loops: -1
+    #  speed: 8
+    #holiday_sweep:
+    #  loops: -1
+    #  speed: 8
+    #jack_santa_sweep:
+    #  loops: -1
+    #  speed: 6
+    #oogie_sweep:
+    #  loops: -1
+    #  speed: 4
+    #misc_sweep:
+    #  loops: -1
+    #  speed: 8
+    #lsb_sweep:
+    #  loops: -1
+    #  speed: 6         
+
+  mode_attract_stopped:
+    attract_dmd_loop:
+      action: stop
+    #gi_fade:
+    #  action: stop
+
+
+    #holiday_sweep:
+    #  action: stop
+    #arrow_sweep:
+    #  action: stop
+    #jack_santa_sweep:
+    #  action: stop
+    #oogie_sweep:
+    #  action: stop
+    #misc_sweep:
+    #  action: stop
+    #lsb_sweep:
+    #  action: stop
+
+sound_player:
+  #mode_attract_started:
+  attractMusic_1:
+    SPRE_4:
+      #loops: -1
+      loops: 0
+      volume: 1
+  #mode_attract_started:
+  attractMusic_2:
+    SPRE_5:
+      #loops: -1
+      loops: 0
+      volume: 1
+      
+  mode_attract_stopping:
+    SPRE_4:
+      action: stop
+    SPRE_5:
+      action: stop
+        
+random_event_player:
+  mode_attract_started:
+  - attractMusic_1
+  - attractMusic_2
+
+
+      

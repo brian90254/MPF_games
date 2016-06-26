@@ -1,0 +1,401 @@
+#config_version=4
+mode:
+  start_events: ball_starting
+  priority: 100
+
+
+event_player:
+  multiplayer_game: _player_1_multiplayer_slide
+  player_1_ball_started: _player_1_multiplayer_slide
+
+
+slide_player:
+  single_player_ball_started: slide_2
+  _player_1_multiplayer_slide: slide_3
+  player_2_ball_started: slide_4
+  player_3_ball_started: slide_5
+  player_4_ball_started: slide_6
+  
+  
+#scoring:
+#    left_orbit_ulit_hit:
+#        Score: 1000
+#    left_ramp_unlit_hit:
+#        Score: 1500
+  #inner_left_loop_unlit_hit:
+  #  score: 2000
+  #oogie_cw_loop_unlit_hit:
+  #  score: 3330
+  #oogie_ccw_loop_unlit_hit:
+  #  score: 6660
+#    inner_right_loop_unlit_hit:
+#        Score: 3500
+#    right_ramp_left_unlit_hit:
+#        Score: 4000
+#    right_ramp_right_unlit_hit:
+#        Score: 4250
+#    right_orbit_unlit_hit:
+#        Score: 4500
+#    tub_lock_unlit_hit:
+#        Score: 5000
+  #sw_slingl:
+  #  score: 170
+  #sw_slingr:
+  #  score: 170
+  #sw_doctor:
+  #  score: 7500
+#    balldevice_mayorscoop_enter:
+#        Score: 5500
+#    balldevice_soupvuk_ball_enter:
+#        Score: 6000
+#    sw_inthehole:
+#        Score: 10000
+#
+
+
+#sound_player:
+#  mode_base_started:
+#    #loop_somethings_up:
+#    loop_somethings_up:
+#      loops: -1
+#      volume: 0.75
+#  
+#  mode_base_stopping:
+#    loop_somethings_up:
+#      action: stop  
+#
+#  mode_base_stop_music:
+#    loop_somethings_up:
+#      action: stop  
+
+      
+  #balldevice_bd_plunger_ball_eject_attempt: ramp 1
+  #balldevice_bd_plunger_ball_eject_failed: sigh
+  #sw_rrampgate: ramp 1
+  #sw_lrampgate: ramp 2
+  #sw_zero: bark_bark
+  #mayor_spin1: head_spin1
+  #mayor_spin2: head_spin2
+  #say_a_reward: a_reward
+  #sw_subwaytree: Woah2
+  #soup_gate_open: du_du_da_da
+  #soup_gate_close: du_du_da_da
+  #sw_sling: sling_bounce
+  #doc_chair_1: Wheelchair_Noise
+  #doc_chair_2: Wheelchair_Noise2
+  #doc_chair_3: Wheelchair_Noise3
+  #doc_chair_4: Wheelchair_Noise4
+  #player_added_1_v2: I_have_every_confidence_in_you
+  #player_added_1_v1: shall_we_then
+  #player_added_2: here_let_me_show_you
+  #player_added_3: doctor_thank_you_for_coming
+  #player_added_4: bunny
+
+
+#random_event_player:
+#  sw_doctor:
+#  - doc_chair_1
+#  - doc_chair_2
+#  - doc_chair_3
+#  - doc_chair_4
+#
+#  player_added_1:
+#  - player_added_1_v2
+#  - player_added_1_v1
+  
+  
+
+slides:
+  slide_2:
+  #brian's new code
+    # RED CENTER
+  - type: text
+    text: (player1|score)
+    number_grouping: true
+    min_digits: 2
+    y: middle+2
+    x: middle
+    style: tall_title
+    font_size: 32
+    color: ff0000
+    #layer: 4
+    
+   # WHITE OUTLINE
+  - type: text
+    text: (player1|score)
+    number_grouping: true
+    min_digits: 2
+    y: middle+3
+    x: middle+1
+    style: tall_title
+    font_size: 32
+    color: FFFFFF
+    #layer: 3
+  - type: text
+    text: (player1|score)
+    number_grouping: true
+    min_digits: 2
+    y: middle+1
+    x: middle-1
+    style: tall_title
+    font_size: 32
+    color: FFFFFF
+    #layer: 3
+  - type: text
+    text: (player1|score)
+    number_grouping: true
+    min_digits: 2
+    y: middle+3
+    x: middle-1
+    style: tall_title
+    font_size: 32
+    color: FFFFFF
+    #layer: 3
+  - type: text
+    text: (player1|score)
+    number_grouping: true
+    min_digits: 2
+    y: middle+1
+    x: middle+1
+    style: tall_title
+    font_size: 32
+    color: FFFFFF
+    #layer: 3
+    
+
+    
+    # Brians new code
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom+2
+    x: middle
+    color: FFFF00
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom+3
+    x: middle+1
+    color: FF0000
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom+1
+    x: middle-1
+    color: FF0000
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom+3
+    x: middle-1
+    color: FF0000
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom+1
+    x: middle+1
+    color: FF0000
+  
+    # old code below
+  slide_3:
+  - type: text
+    text: (player1|score)
+    style: tall_title
+    font_size: 32
+    color: 339966
+    number_grouping: true
+    min_digits: 2
+    anchor_y: top
+    anchor_x: left
+    x: left+0
+    y: top+0
+  - type: text
+    text: (player2|score)
+    style: tall_title
+    font_size: 18
+    anchor_y: top
+    anchor_x: right
+    number_grouping: true
+    min_digits: 2
+    x: right+0
+    y: top+0
+  - type: text
+    text: (player3|score)
+    style: tall_title
+    font_size: 18
+    anchor_y: bottom
+    anchor_x: left
+    x: left+0
+    y: bottom+0
+    number_grouping: true
+    min_digits: 2
+  - type: text
+    text: (player4|score)
+    style: tall_title
+    font_size: 18
+    anchor_y: bottom
+    anchor_x: right
+    x: right+0
+    y: bottom+0
+    number_grouping: true
+    min_digits: 2
+  - type: text
+    style: tall_title
+    font_size: 12
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom
+  slide_4:
+  - type: text
+    text: (player1|score)
+    style: tall_title
+    font_size: 18
+    number_grouping: true
+    min_digits: 2
+    anchor_y: top
+    anchor_x: left
+    x: left+0
+    y: top+0
+  - type: text
+    text: (player2|score)
+    style: tall_title
+    font_size: 32
+    color: 339966
+    anchor_y: top
+    anchor_x: right
+    number_grouping: true
+    min_digits: 2
+    x: right+0
+    y: top+0
+  - type: text
+    text: (player3|score)
+    style: tall_title
+    font_size: 18
+    anchor_y: bottom
+    anchor_x: left
+    y: bottom+0
+    x: left+0
+    number_grouping: true
+    min_digits: 2
+  - type: text
+    text: (player4|score)
+    style: tall_title
+    font_size: 18
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+0
+    x: right+0
+    number_grouping: true
+    min_digits: 2
+  - type: text
+    style: tall_title
+    font_size: 12
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom
+  slide_5:
+  - type: text
+    text: (player1|score)
+    style: tall_title
+    font_size: 18
+    number_grouping: true
+    min_digits: 2
+    anchor_y: top
+    anchor_x: left
+    x: left+0
+    y: top+0
+  - type: text
+    text: (player2|score)
+    style: tall_title
+    font_size: 18
+    anchor_y: top
+    anchor_x: right
+    number_grouping: true
+    min_digits: 2
+    x: right+0
+    y: top+0
+  - type: text
+    text: (player3|score)
+    style: tall_title
+    font_size: 32
+    color: 339966
+    anchor_y: bottom
+    anchor_x: left
+    y: bottom+0
+    x: left+0
+    number_grouping: true
+    min_digits: 2
+  - type: text
+    text: (player4|score)
+    style: tall_title
+    font_size: 18
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+0
+    x: right+0
+    number_grouping: true
+    min_digits: 2
+  - type: text
+    style: tall_title
+    font_size: 12
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom
+  slide_6:
+  - type: text
+    text: (player1|score)
+    style: tall_title
+    font_size: 18
+    number_grouping: true
+    min_digits: 2
+    anchor_y: top
+    anchor_x: left
+    x: left+0
+    y: top+0
+  - type: text
+    text: (player2|score)
+    style: tall_title
+    font_size: 18
+    anchor_y: top
+    anchor_x: right
+    number_grouping: true
+    min_digits: 2
+    x: right+0
+    y: top+0
+  - type: text
+    text: (player3|score)
+    style: tall_title
+    font_size: 18
+    anchor_y: bottom
+    anchor_x: left
+    y: bottom+0
+    x: left+0
+    number_grouping: true
+    min_digits: 2
+  - type: text
+    text: (player4|score)
+    style: tall_title
+    font_size: 32
+    color: 339966
+    anchor_y: bottom
+    anchor_x: right
+    y: bottom+0
+    x: right+0
+    number_grouping: true
+    min_digits: 2
+  - type: text
+    style: tall_title
+    font_size: 12
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom

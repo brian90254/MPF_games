@@ -1,0 +1,53 @@
+2016-06-25 20:24:59,394 : INFO : kivy : Factory: 179 symbols loaded
+2016-06-25 20:24:59,481 : INFO : kivy : Image: Providers: img_tex, img_imageio, img_dds, img_gif, img_sdl2 (img_pil, img_ffpyplayer ignored)
+2016-06-25 20:24:59,611 : INFO : kivy : VideoGstplayer: Using Gstreamer 1.4.5.0
+2016-06-25 20:24:59,612 : INFO : kivy : Video: Provider: gstplayer
+2016-06-25 20:24:59,623 : INFO : kivy : Loading MPF-MC controller
+2016-06-25 20:24:59,624 : INFO : mpfmc : Mission Pinball Framework Media Controller v0.30.0.dev503
+2016-06-25 20:24:59,624 : INFO : mpfmc : Machine path: /Users/briancox/Dropbox (TML Team)/MPF_games/SPRE
+2016-06-25 20:24:59,624 : INFO : mpfmc : Starting clock at 30.0Hz
+2016-06-25 20:24:59,629 : INFO : kivy : Text: Provider: sdl2
+2016-06-25 20:24:59,863 : INFO : kivy : OSC: using <multiprocessing> for socket
+2016-06-25 20:24:59,866 : INFO : kivy : Window: Provider: sdl2
+2016-06-25 20:25:00,442 : INFO : kivy : GL: OpenGL version <b'2.1 NVIDIA-10.4.2 310.41.35f01'>
+2016-06-25 20:25:00,443 : INFO : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2016-06-25 20:25:00,443 : INFO : kivy : GL: OpenGL renderer <b'NVIDIA GeForce GT 750M OpenGL Engine'>
+2016-06-25 20:25:00,443 : INFO : kivy : GL: OpenGL parsed version: 2, 1
+2016-06-25 20:25:00,443 : INFO : kivy : GL: Shading version <b'1.20'>
+2016-06-25 20:25:00,443 : INFO : kivy : GL: Texture max size <16384>
+2016-06-25 20:25:00,443 : INFO : kivy : GL: Texture max units <16>
+2016-06-25 20:25:00,454 : INFO : kivy : Window: auto add sdl2 input provider
+2016-06-25 20:25:00,454 : INFO : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2016-06-25 20:25:00,486 : INFO : AudioInterface : Initialized 0.30.0-dev16
+2016-06-25 20:25:00,492 : INFO : kivy : Base: Start application main loop
+2016-06-25 20:25:00,620 : INFO : kivy : GL: NPOT texture support is available
+2016-06-25 20:25:00,994 : ERROR : kivy : VideoGstplayer: b'Resource not found.'
+2016-06-25 20:25:00,994 : ERROR : kivy : VideoGstplayer: b'Resource not found.'
+2016-06-25 20:25:00,995 : INFO : kivy : Base: Leaving application in progress...
+2016-06-25 20:25:00,995 : ERROR : kivy : Video file SPRE_AttractMode_1.mp4 was loaded, but seems to have no content. Check to make sure you have the proper Gstreamer plugins for the codec this video needs
+Traceback (most recent call last):
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpfmc/commands/mc.py", line 152, in __init__
+    thread_stopper=thread_stopper).run()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/app.py", line 828, in run
+    runTouchApp()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/base.py", line 487, in runTouchApp
+    EventLoop.window.mainloop()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/core/window/window_sdl2.py", line 619, in mainloop
+    self._mainloop()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/core/window/window_sdl2.py", line 362, in _mainloop
+    EventLoop.idle()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/base.py", line 327, in idle
+    Clock.tick()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/clock.py", line 515, in tick
+    self._process_events()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/clock.py", line 647, in _process_events
+    event.tick(self._last_tick, remove)
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/clock.py", line 406, in tick
+    ret = callback(self._dt)
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpf/core/assets.py", line 499, in _check_loader_status
+    self.loaded_queue.get().is_loaded()
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpfmc/assets/video.py", line 112, in is_loaded
+    "codec this video needs".format(self.file))
+ValueError: Video file SPRE_AttractMode_1.mp4 was loaded, but seems to have no content. Check to make sure you have the proper Gstreamer plugins for the codec this video needs
+2016-06-25 20:25:00,996 : INFO : kivy : Stopping child threads... (1 remaining)
+2016-06-25 20:25:02,004 : INFO : kivy : All child threads stopped.

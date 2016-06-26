@@ -1,0 +1,327 @@
+#config_version=4
+
+# ---------------
+# MODES
+# ---------------
+config:
+  # keep, but edit
+#- videos.yaml
+#- fasthardware.yaml
+#- display.yaml
+#- audio.yaml
+#- keys.yaml
+  # consider removing
+#- shots.yaml
+#- leds.yaml
+#- lightscripts.yaml
+- modes.yaml
+
+# ---------------
+# DISPLAY
+# ---------------
+window:
+  width: 1920
+  height: 1080
+  title: Steampunk Royale
+  resizable: true
+  #resizable: false
+  fullscreen: false
+  #fullscreen: true
+  #borderless: false
+  borderless: true
+  exit_on_escape: true
+
+displays:
+  window:
+    height: 1080
+    width: 1920
+  dmd:
+    width: 240
+    height: 134    
+    default: true
+
+slides:
+  dmd_parent:
+    - type: color_dmd
+      width: 1920
+      height: 1080   
+      gain: 1.0
+      bg_color: 101010ff
+      blur: 0.1
+      pixel_size: 0.87
+      dot_filter: True      
+        
+slide_player:
+  mc_ready:
+    dmd_parent:
+      target: window
+      
+# ---------------
+# CONFIG
+# ---------------
+game:
+  balls_per_game: 1
+  max_players: 1
+
+machine:
+  balls_installed: 6
+  min_balls: 1
+  
+Widget_Styles:
+  text_default:
+    font_name: NewRocker
+    font_size: 10
+  tall_title:
+    font_name: NewRocker
+    font_size: 10
+
+# ---------------
+# AUDIO/VIDEO
+# ---------------
+sound_system:
+  buffer: 4096
+  frequency: 44100
+  channels: 2
+  master_volume: 1
+  tracks:
+    voice:
+      volume: 1
+      simultaneous_sounds: 1
+      preload: yes
+    sfx:
+      volume: 1
+      simultaneous_sounds: 8
+      preload: yes
+    music:
+      volume: 1
+      simultaneous_sounds: 1
+
+assets:
+    sounds:
+        default:
+            load: preload
+        voice:
+            load: preload
+            track: voice
+        sfx:
+            load: preload
+            track: sfx
+        music:
+            load: preload
+            track: music
+    videos:
+        default:
+            load: preload
+#            
+sounds:
+    SPRE_1:
+        target: music
+    SPRE_2:
+        target: music
+    SPRE_3:
+        target: music
+
+videos:
+  #SPRE_AttractMode_1:
+  #  file: SPRE_AttractMode_1.mp4
+  SPRE_AttractMode_2:
+    file: SPRE_AttractMode_2.mp4
+    
+# ---------------
+# HARDWARE
+# ---------------
+fast:
+  ports: /dev/tty.usbserial-142B, /dev/tty.usbserial-142C
+  config_number_format: int
+  #debug: True
+hardware:
+  driverboards: fast
+  platform: fast
+  #platform: smart_virtual
+  
+# ---------------
+# HARDWARE / SWITCHES
+# ---------------
+switches:
+  s_flipper_left:
+    number: 9
+    tags: player, flipper_left
+    label:
+  s_flipper_right:
+    number: 10
+    tags: player, flipper_right
+    label:
+  s_start:
+    number: 8
+    label:
+    tags: start, player
+  s_plunger_lane:
+    number: 7
+    label:
+    tags:
+  s_trough_1:
+    number: 0
+    label:
+    tags:
+    type: NC
+  s_trough_2:
+    number: 1
+    label:
+    tags:
+    type: NC
+  s_trough_3:
+    number: 2
+    label:
+    tags:
+    type: NC
+  s_trough_4:
+    number: 3
+    label:
+    tags:
+    type: NC
+  s_trough_5:
+    number: 4
+    label:
+    tags:
+    type: NC
+  s_trough_6:
+    number: 5
+    label:
+    tags:
+    type: NC
+  s_trough_jam:
+    number: 6
+    label:
+    tags:
+    type: 'NO'
+
+  s_slingshot_left:
+    number: 11
+    label:
+    tags: playfield_active, slingshot
+  s_slingshot_right:
+    number: 12
+    label:
+    tags: playfield_active, slingshot
+
+# ---------------
+# HARDWARE / COIL
+# ---------------
+coils:
+  
+  c_flipper_left_main:
+    number: 0
+    pulse_ms: 100
+  c_flipper_left_hold:
+    number: 4
+    pulse_ms: 100
+    hold_power: 4
+    #allow_enable: true
+  c_flipper_right_main:
+    number: 2
+    pulse_ms: 100
+  c_flipper_right_hold:
+    number: 5
+    pulse_ms: 100
+    hold_power: 3
+    #allow_enable: true
+    
+  c_trough_eject:
+    number: 1
+    label:
+    tags:
+    pulse_ms: 25
+  c_plunger_lane:
+    number: 3
+    label:
+    tags:
+    pulse_ms: 25
+  c_slingshot_left:
+    number: 7
+    label:
+    tags:
+  c_slingshot_right:
+    number: 6
+    label:
+    tags:
+
+# ---------------
+# HARDWARE / AUTOFIRE
+# ---------------
+flippers:
+  left:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_flipper_left
+  right:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_flipper_right
+
+autofire_coils:
+  slingshot_left:
+    coil: c_slingshot_left
+    switch: s_slingshot_left
+  slingshot_right:
+    coil: c_slingshot_right
+    switch: s_slingshot_right
+
+# ---------------
+# HARDWARE / BALL DEVICES
+# ---------------
+ball_devices:
+
+  trough:
+    tags: trough, home, drain
+    ball_switches: s_trough_1, s_trough_2, s_trough_3, s_trough_4, s_trough_5, s_trough_6, s_trough_jam
+    eject_coil: c_trough_eject
+    confirm_eject_type: target
+    eject_targets: plunger_lane
+    jam_switch: s_trough_jam
+
+  plunger_lane:
+    tags: ball_add_live
+    ball_switches: s_plunger_lane
+    eject_coil: c_plunger_lane
+    
+
+# ---------------
+# VIRTUAL
+# ---------------
+keyboard:
+    z:
+        switch: s_flipper_left
+    /:
+        switch: s_flipper_right
+    1:
+        switch: s_trough_1
+        toggle: true
+    2:
+        switch: s_trough_2
+        toggle: true
+    3:
+        switch: s_trough_3
+        toggle: true
+    4:
+        switch: s_trough_4
+        toggle: true
+    5:
+        switch: s_trough_5
+        toggle: true
+    6:
+        switch: s_trough_6
+        toggle: true
+    p:
+        switch: s_plunger_lane
+        toggle: true
+    s:
+        switch: s_start
+
+
+virtual_platform_start_active_switches:
+    s_trough_1
+    s_trough_2
+    s_trough_3
+    s_trough_4
+    s_trough_5
+    s_trough_6
