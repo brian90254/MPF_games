@@ -1,0 +1,61 @@
+2016-06-25 17:33:01,367 : INFO : kivy : Factory: 179 symbols loaded
+2016-06-25 17:33:01,467 : INFO : kivy : Image: Providers: img_tex, img_imageio, img_dds, img_gif, img_sdl2 (img_pil, img_ffpyplayer ignored)
+2016-06-25 17:33:01,613 : INFO : kivy : VideoGstplayer: Using Gstreamer 1.4.5.0
+2016-06-25 17:33:01,613 : INFO : kivy : Video: Provider: gstplayer
+2016-06-25 17:33:01,625 : INFO : kivy : Loading MPF-MC controller
+2016-06-25 17:33:01,626 : INFO : mpfmc : Mission Pinball Framework Media Controller v0.30.0.dev503
+2016-06-25 17:33:01,626 : INFO : mpfmc : Machine path: /Users/briancox/Dropbox (TML Team)/FAST_MPF_Template
+2016-06-25 17:33:01,626 : INFO : mpfmc : Starting clock at 30.0Hz
+2016-06-25 17:33:01,636 : INFO : kivy : Text: Provider: sdl2
+2016-06-25 17:33:01,849 : INFO : kivy : OSC: using <multiprocessing> for socket
+2016-06-25 17:33:01,851 : INFO : kivy : Window: Provider: sdl2
+2016-06-25 17:33:02,502 : INFO : kivy : GL: OpenGL version <b'2.1 NVIDIA-10.4.2 310.41.35f01'>
+2016-06-25 17:33:02,502 : INFO : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2016-06-25 17:33:02,502 : INFO : kivy : GL: OpenGL renderer <b'NVIDIA GeForce GT 750M OpenGL Engine'>
+2016-06-25 17:33:02,502 : INFO : kivy : GL: OpenGL parsed version: 2, 1
+2016-06-25 17:33:02,502 : INFO : kivy : GL: Shading version <b'1.20'>
+2016-06-25 17:33:02,502 : INFO : kivy : GL: Texture max size <16384>
+2016-06-25 17:33:02,502 : INFO : kivy : GL: Texture max units <16>
+2016-06-25 17:33:02,514 : INFO : kivy : Window: auto add sdl2 input provider
+2016-06-25 17:33:02,514 : INFO : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2016-06-25 17:33:02,546 : INFO : AudioInterface : Initialized 0.30.0-dev16
+2016-06-25 17:33:02,552 : INFO : kivy : Base: Start application main loop
+2016-06-25 17:33:02,660 : INFO : kivy : GL: NPOT texture support is available
+2016-06-25 17:33:02,747 : INFO : kivy : Base: Leaving application in progress...
+2016-06-25 17:33:02,747 : ERROR : kivy : 'file'
+Traceback (most recent call last):
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpfmc/commands/mc.py", line 152, in __init__
+    thread_stopper=thread_stopper).run()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/app.py", line 828, in run
+    runTouchApp()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/base.py", line 487, in runTouchApp
+    EventLoop.window.mainloop()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/core/window/window_sdl2.py", line 619, in mainloop
+    self._mainloop()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/core/window/window_sdl2.py", line 362, in _mainloop
+    EventLoop.idle()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/base.py", line 327, in idle
+    Clock.tick()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/clock.py", line 515, in tick
+    self._process_events()
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/clock.py", line 647, in _process_events
+    event.tick(self._last_tick, remove)
+  File "/Applications/MPF.app/Contents/Resources/kivy/kivy/clock.py", line 406, in tick
+    ret = callback(self._dt)
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpfmc/uix/display.py", line 122, in _displays_initialized
+    self.mc.displays_initialized()
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpfmc/core/mc.py", line 204, in displays_initialized
+    self._init()
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpfmc/core/mc.py", line 246, in _init
+    self.events.process_event_queue()
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpf/core/events.py", line 481, in process_event_queue
+    **event[3])
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpf/core/events.py", line 416, in _process_event
+    result = handler[0](**merged_kwargs)
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpf/core/assets.py", line 191, in _create_assets
+    self._create_assets_from_disk(config=self.machine.machine_config)
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpf/core/assets.py", line 304, in _create_assets_from_disk
+    file=config[ac['disk_asset_section']][asset]['file'],
+KeyError: 'file'
+2016-06-25 17:33:02,759 : INFO : kivy : Stopping child threads... (1 remaining)
+2016-06-25 17:33:03,565 : INFO : kivy : All child threads stopped.

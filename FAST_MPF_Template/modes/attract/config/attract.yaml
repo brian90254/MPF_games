@@ -1,0 +1,23 @@
+#config_version=4
+mode:
+  priority: 10000
+
+show_player:
+  mode_attract_started:
+    attract_DMD_Show:
+      action: play
+      loops: -1
+
+  mode_attract_stopped:
+    attract_DMD_Show:
+      action: stop
+
+sound_player:
+  mode_attract_started:
+    Music_1:
+      loops: 0
+      volume: 1
+      
+  mode_attract_stopping:
+    Music_1:
+      action: stop

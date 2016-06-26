@@ -1,0 +1,38 @@
+2016-06-23 22:08:54,704 : INFO : kivy : Factory: 179 symbols loaded
+2016-06-23 22:08:54,798 : INFO : kivy : Image: Providers: img_tex, img_imageio, img_dds, img_gif, img_sdl2 (img_pil, img_ffpyplayer ignored)
+2016-06-23 22:08:54,932 : INFO : kivy : VideoGstplayer: Using Gstreamer 1.4.5.0
+2016-06-23 22:08:54,932 : INFO : kivy : Video: Provider: gstplayer
+2016-06-23 22:08:54,945 : INFO : kivy : Loading MPF-MC controller
+2016-06-23 22:08:54,945 : INFO : kivy : Mission Pinball Framework Media Controller v0.30.0.dev443
+2016-06-23 22:08:54,945 : INFO : kivy : Machine path: /Users/briancox/Dropbox (TML Team)/SPRE
+2016-06-23 22:08:54,945 : INFO : kivy : Starting clock at 30.0Hz
+2016-06-23 22:08:54,950 : INFO : kivy : Text: Provider: sdl2
+2016-06-23 22:08:55,152 : INFO : kivy : OSC: using <multiprocessing> for socket
+2016-06-23 22:08:55,154 : INFO : kivy : Window: Provider: sdl2
+2016-06-23 22:08:55,535 : INFO : kivy : GL: OpenGL version <b'2.1 INTEL-10.14.66'>
+2016-06-23 22:08:55,535 : INFO : kivy : GL: OpenGL vendor <b'Intel Inc.'>
+2016-06-23 22:08:55,536 : INFO : kivy : GL: OpenGL renderer <b'Intel Iris OpenGL Engine'>
+2016-06-23 22:08:55,536 : INFO : kivy : GL: OpenGL parsed version: 2, 1
+2016-06-23 22:08:55,536 : INFO : kivy : GL: Shading version <b'1.20'>
+2016-06-23 22:08:55,536 : INFO : kivy : GL: Texture max size <16384>
+2016-06-23 22:08:55,536 : INFO : kivy : GL: Texture max units <16>
+2016-06-23 22:08:55,554 : INFO : kivy : Window: auto add sdl2 input provider
+2016-06-23 22:08:55,554 : INFO : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2016-06-23 22:08:55,576 : INFO : kivy : Base: Start application main loop
+2016-06-23 22:08:55,728 : INFO : kivy : GL: NPOT texture support is available
+2016-06-23 22:08:57,130 : WARNING : kivy : VideoGstplayer: b'not negotiated'
+2016-06-23 22:09:39,524 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-23 22:09:39,568 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-23 22:09:39,569 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-23 22:09:39,570 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-23 22:09:39,571 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-23 22:12:05,782 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-23 22:12:05,783 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-23 22:12:05,784 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-23 22:12:05,784 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-23 22:12:05,785 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-24 00:49:49,288 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-24 00:49:49,289 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-24 00:49:49,291 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-24 00:49:49,292 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.
+2016-06-24 00:49:49,293 : WARNING : kivy : DEPRECATION WARNING: The 'entrance' animation event name has been changed to 'add_to_slide', 'pre_show_slide', and/or 'show_slide' to give more flexibility. See the docs for more details. 'entrance' will be removed in 0.31.

@@ -1,0 +1,33 @@
+2016-06-25 17:03:42,565 : INFO : kivy : Factory: 179 symbols loaded
+2016-06-25 17:03:42,718 : INFO : kivy : Image: Providers: img_tex, img_imageio, img_dds, img_gif, img_sdl2 (img_pil, img_ffpyplayer ignored)
+2016-06-25 17:03:42,931 : INFO : kivy : VideoGstplayer: Using Gstreamer 1.4.5.0
+2016-06-25 17:03:42,931 : INFO : kivy : Video: Provider: gstplayer
+2016-06-25 17:03:42,966 : INFO : kivy : Loading MPF-MC controller
+2016-06-25 17:03:42,966 : INFO : mpfmc : Mission Pinball Framework Media Controller v0.30.0.dev503
+2016-06-25 17:03:42,967 : INFO : mpfmc : Machine path: /Users/briancox/Dropbox (TML Team)/SPRE
+2016-06-25 17:03:42,967 : INFO : mpfmc : Starting clock at 30.0Hz
+2016-06-25 17:03:42,979 : INFO : kivy : Text: Provider: sdl2
+2016-06-25 17:03:43,224 : INFO : kivy : OSC: using <multiprocessing> for socket
+2016-06-25 17:03:43,227 : INFO : kivy : Window: Provider: sdl2
+2016-06-25 17:03:43,881 : INFO : kivy : GL: OpenGL version <b'2.1 NVIDIA-10.4.2 310.41.35f01'>
+2016-06-25 17:03:43,881 : INFO : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2016-06-25 17:03:43,881 : INFO : kivy : GL: OpenGL renderer <b'NVIDIA GeForce GT 750M OpenGL Engine'>
+2016-06-25 17:03:43,881 : INFO : kivy : GL: OpenGL parsed version: 2, 1
+2016-06-25 17:03:43,882 : INFO : kivy : GL: Shading version <b'1.20'>
+2016-06-25 17:03:43,882 : INFO : kivy : GL: Texture max size <16384>
+2016-06-25 17:03:43,882 : INFO : kivy : GL: Texture max units <16>
+2016-06-25 17:03:43,899 : INFO : kivy : Window: auto add sdl2 input provider
+2016-06-25 17:03:43,900 : INFO : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2016-06-25 17:03:43,936 : INFO : AudioInterface : Initialized 0.30.0-dev16
+2016-06-25 17:03:43,944 : INFO : kivy : Base: Start application main loop
+2016-06-25 17:03:44,079 : INFO : kivy : GL: NPOT texture support is available
+2016-06-25 17:03:44,940 : INFO : MPF-MC BCP Server : Starting up on localhost port 5050
+2016-06-25 17:03:44,941 : INFO : MPF-MC BCP Server : Waiting for a connection...
+2016-06-25 17:03:49,314 : INFO : MPF-MC BCP Server : Received connection from: 127.0.0.1:50252
+2016-06-25 17:06:11,864 : INFO : kivy : Base: Leaving application in progress...
+2016-06-25 17:06:11,916 : INFO : mpfmc : Stopping...
+2016-06-25 17:06:11,917 : INFO : mpfmc : Loop rate 33.01Hz
+2016-06-25 17:06:11,917 : INFO : kivy : MC run loop ended.
+2016-06-25 17:06:11,917 : INFO : kivy : Stopping child threads... (3 remaining)
+2016-06-25 17:06:12,777 : INFO : MPF-MC BCP Server : Stopping BCP sending thread
+2016-06-25 17:06:12,825 : INFO : kivy : All child threads stopped.

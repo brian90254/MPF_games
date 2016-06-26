@@ -1,0 +1,27 @@
+2016-06-24 21:40:34,120 : INFO : kivy : Factory: 179 symbols loaded
+2016-06-24 21:40:34,201 : INFO : kivy : Image: Providers: img_tex, img_imageio, img_dds, img_gif, img_sdl2 (img_pil, img_ffpyplayer ignored)
+2016-06-24 21:40:34,324 : INFO : kivy : VideoGstplayer: Using Gstreamer 1.4.5.0
+2016-06-24 21:40:34,325 : INFO : kivy : Video: Provider: gstplayer
+2016-06-24 21:40:34,338 : INFO : kivy : Loading MPF-MC controller
+2016-06-24 21:40:34,338 : INFO : mpfmc : Mission Pinball Framework Media Controller v0.30.0.dev503
+2016-06-24 21:40:34,339 : INFO : mpfmc : Machine path: /Users/briancox/Dropbox (TML Team)/SPRE
+2016-06-24 21:40:34,339 : INFO : mpfmc : Starting clock at 30.0Hz
+2016-06-24 21:40:34,343 : INFO : kivy : Text: Provider: sdl2
+2016-06-24 21:40:34,541 : INFO : kivy : OSC: using <multiprocessing> for socket
+2016-06-24 21:40:34,543 : INFO : kivy : Window: Provider: sdl2
+2016-06-24 21:40:35,173 : INFO : kivy : GL: OpenGL version <b'2.1 NVIDIA-10.4.2 310.41.35f01'>
+2016-06-24 21:40:35,173 : INFO : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2016-06-24 21:40:35,173 : INFO : kivy : GL: OpenGL renderer <b'NVIDIA GeForce GT 750M OpenGL Engine'>
+2016-06-24 21:40:35,173 : INFO : kivy : GL: OpenGL parsed version: 2, 1
+2016-06-24 21:40:35,173 : INFO : kivy : GL: Shading version <b'1.20'>
+2016-06-24 21:40:35,173 : INFO : kivy : GL: Texture max size <16384>
+2016-06-24 21:40:35,173 : INFO : kivy : GL: Texture max units <16>
+2016-06-24 21:40:35,186 : INFO : kivy : Window: auto add sdl2 input provider
+2016-06-24 21:40:35,187 : INFO : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2016-06-24 21:40:35,188 : INFO : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2016-06-24 21:40:35,212 : INFO : AudioInterface : Initialized 0.30.0-dev16
+2016-06-24 21:40:35,213 : INFO : kivy : Base: Start application main loop
+2016-06-24 21:40:35,403 : INFO : kivy : GL: NPOT texture support is available
+2016-06-24 21:40:35,408 : INFO : MPF-MC BCP Server : Starting up on localhost port 5050
+2016-06-24 21:40:35,408 : INFO : MPF-MC BCP Server : Waiting for a connection...
+2016-06-24 21:40:43,537 : INFO : kivy : Base: Leaving application in progress...

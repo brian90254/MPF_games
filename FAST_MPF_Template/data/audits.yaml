@@ -1,0 +1,29 @@
+events:
+  game_ended: 0
+  game_started: 3
+player:
+  score:
+    average: 0
+    top: []
+    total: 0
+switches:
+  s_flipper_left: 0
+  s_flipper_lower_left: 0
+  s_flipper_lower_right: 0
+  s_flipper_right: 0
+  s_left_flipper: 0
+  s_left_slingshot: 0
+  s_plunger_lane: 0
+  s_right_flipper: 0
+  s_right_slingshot: 0
+  s_shooter_lane: 0
+  s_slingshot_left: 0
+  s_slingshot_right: 0
+  s_start: 0
+  s_trough_1: 0
+  s_trough_2: 0
+  s_trough_3: 0
+  s_trough_4: 0
+  s_trough_5: 0
+  s_trough_6: 0
+  s_trough_jam: 0

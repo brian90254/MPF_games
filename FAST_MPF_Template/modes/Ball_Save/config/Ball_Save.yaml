@@ -1,0 +1,44 @@
+# config_version=4
+
+mode:
+  start_events: ball_starting
+  priority: 8500
+
+ball_saves:
+  default:
+    active_time: 5s
+    hurry_up_time: 2s
+    grace_period: 2s
+    enable_events: mode_base_started
+    timer_start_events: balldevice_bd_plunger_ball_eject_success
+    auto_launch: true
+    balls_to_save: 1
+    debug: true
+
+slide_player:
+  ball_save_default_saving_ball: slide_1
+  
+slides:
+  slide_1:
+    widgets:
+      # BLUE FORGROUND
+      - type: text
+        style: tall_title
+        font_size: 32
+        color: 0000ff
+        text: Ball Saved
+        y: middle
+        x: middle
+        animations: 
+          entrance:
+          - property: font_size
+            value: 32
+            duration: 2000ms
+            timing: with_previous
+          - property: opacity
+            value: 0
+            duration: 1000ms
+            timing: after_previous
+    expire: 3.0s
+
+

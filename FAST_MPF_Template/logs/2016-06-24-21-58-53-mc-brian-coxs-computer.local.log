@@ -1,0 +1,36 @@
+2016-06-24 21:58:54,047 : INFO : kivy : Factory: 179 symbols loaded
+2016-06-24 21:58:54,139 : INFO : kivy : Image: Providers: img_tex, img_imageio, img_dds, img_gif, img_sdl2 (img_pil, img_ffpyplayer ignored)
+2016-06-24 21:58:54,275 : INFO : kivy : VideoGstplayer: Using Gstreamer 1.4.5.0
+2016-06-24 21:58:54,275 : INFO : kivy : Video: Provider: gstplayer
+2016-06-24 21:58:54,288 : INFO : kivy : Loading MPF-MC controller
+2016-06-24 21:58:54,288 : INFO : mpfmc : Mission Pinball Framework Media Controller v0.30.0.dev503
+2016-06-24 21:58:54,288 : INFO : mpfmc : Machine path: /Users/briancox/Dropbox (TML Team)/SPRE
+2016-06-24 21:58:54,288 : INFO : mpfmc : Starting clock at 30.0Hz
+2016-06-24 21:58:54,293 : INFO : kivy : Text: Provider: sdl2
+2016-06-24 21:58:54,506 : INFO : kivy : OSC: using <multiprocessing> for socket
+2016-06-24 21:58:54,508 : INFO : kivy : Window: Provider: sdl2
+2016-06-24 21:58:55,113 : INFO : kivy : GL: OpenGL version <b'2.1 NVIDIA-10.4.2 310.41.35f01'>
+2016-06-24 21:58:55,113 : INFO : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2016-06-24 21:58:55,113 : INFO : kivy : GL: OpenGL renderer <b'NVIDIA GeForce GT 750M OpenGL Engine'>
+2016-06-24 21:58:55,113 : INFO : kivy : GL: OpenGL parsed version: 2, 1
+2016-06-24 21:58:55,113 : INFO : kivy : GL: Shading version <b'1.20'>
+2016-06-24 21:58:55,114 : INFO : kivy : GL: Texture max size <16384>
+2016-06-24 21:58:55,114 : INFO : kivy : GL: Texture max units <16>
+2016-06-24 21:58:55,126 : INFO : kivy : Window: auto add sdl2 input provider
+2016-06-24 21:58:55,126 : INFO : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2016-06-24 21:58:55,161 : INFO : AudioInterface : Initialized 0.30.0-dev16
+2016-06-24 21:58:55,162 : ERROR : kivy : 'NoneType' object has no attribute 'update'
+Traceback (most recent call last):
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpfmc/commands/mc.py", line 152, in __init__
+    thread_stopper=thread_stopper).run()
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpfmc/core/mc.py", line 131, in __init__
+    VideoAsset.initialize(self)
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpf/core/assets.py", line 802, in initialize
+    pool_config_section=cls.pool_config_section)
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpf/core/assets.py", line 156, in register_asset_class
+    self._set_asset_class_defaults(ac, self.machine.machine_config)
+  File "/Applications/MPF.app/Contents/Frameworks/python/3.5.0/lib/python3.5/site-packages/mpf/core/assets.py", line 182, in _set_asset_class_defaults
+    default_config_dict[default_section_name].update(
+AttributeError: 'NoneType' object has no attribute 'update'
+2016-06-24 21:58:55,163 : INFO : kivy : Stopping child threads... (1 remaining)
+2016-06-24 21:58:56,172 : INFO : kivy : All child threads stopped.

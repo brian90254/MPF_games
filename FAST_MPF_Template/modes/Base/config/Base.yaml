@@ -1,0 +1,29 @@
+#config_version=4
+mode:
+  start_events: ball_starting
+  priority: 100
+
+slide_player:
+  single_player_ball_started: slide_2
+  
+slides:
+  slide_2:
+    # RED CENTER
+  - type: text
+    text: (player1|score)
+    number_grouping: true
+    min_digits: 2
+    y: middle+2
+    x: middle
+    style: tall_title
+    font_size: 32
+    color: ff0000
+    
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: BALL (player1|ball)    (machine|credits_string)
+    anchor_y: bottom
+    y: bottom+2
+    x: middle
+    color: FFFF00
