@@ -1,5 +1,7 @@
 #config_version=4
 
+# search for keyword "TODO" for easy things to customize your first game.
+
 # ---------------
 # MODES
 # ---------------
@@ -51,14 +53,17 @@ game:
   max_players: 1
 
 machine:
+  # Standard FAST trough is six balls
   balls_installed: 6
   min_balls: 1
   
 Widget_Styles:
   text_default:
+    # TODO place your font in the "fonts" folder, and re-name "DefaultFont", or change the name here.
     font_name: DefaultFont
     font_size: 10
   tall_title:
+    # TODO place your font in the "fonts" folder, and re-name "DefaultFont", or change the name here.
     font_name: DefaultFont
     font_size: 10
 
@@ -101,17 +106,22 @@ assets:
             load: preload
 #            
 sounds:
+    # TODO rename your attract music file to "Music_1.wav" and place in the folder "sounds/music"
+    # or change the name below to match your file.
     Music_1:
         target: music
 
 videos:
-  Video_1:
-    file: Video_1.mp4
+    # TODO silimar to music, rename your attract video file to "Video_1.mp4" and place in the folder "videos"
+    # or change the name below to match your file.
+    Video_1:
+        file: Video_1.mp4
 
 # ---------------
 # HARDWARE
 # ---------------
 fast:
+  # TODO set your ports to the names you find in your own system, under the "dev" folder.
   ports: /dev/tty.usbserial-142B, /dev/tty.usbserial-142C
   config_number_format: int
   #debug: True
@@ -124,22 +134,12 @@ hardware:
 # HARDWARE / SWITCHES
 # ---------------
 switches:
-  s_flipper_left:
-    number: 9
-    tags: player, flipper_left
-    label:
-  s_flipper_right:
-    number: 10
-    tags: player, flipper_right
-    label:
-  s_start:
-    number: 8
-    label:
-    tags: start, player
-  s_plunger_lane:
-    number: 7
-    label:
-    tags:
+
+  # ---------------
+  # HARDWARE / SWITCHES / TROUGH
+  # ---------------
+  # These switches are numbered according to the connector on the FAST trough,
+  # assuming you plug into the first connection on the first driver board.
   s_trough_1:
     number: 0
     label:
@@ -175,7 +175,30 @@ switches:
     label:
     tags:
     type: 'NO'
+  s_plunger_lane:
+    number: 7
+    label:
+    tags:
 
+  # ---------------
+  # HARDWARE / SWITCHES / CABINET
+  # ---------------
+  s_start:
+    number: 8
+    label:
+    tags: start, player
+  s_flipper_left:
+    number: 9
+    tags: player, flipper_left
+    label:
+  s_flipper_right:
+    number: 10
+    tags: player, flipper_right
+    label:
+
+  # ---------------
+  # HARDWARE / SWITCHES / PLAYFIELD
+  # ---------------
   s_slingshot_left:
     number: 11
     label:
@@ -190,11 +213,14 @@ switches:
 # ---------------
 coils:
   
+  # ---------------
+  # HARDWARE / COIL / FLIPPERS
+  # ---------------
   c_flipper_left_main:
     number: 0
     pulse_ms: 100
   c_flipper_left_hold:
-    number: 4
+    number: 1
     pulse_ms: 100
     hold_power: 4
     #allow_enable: true
@@ -202,27 +228,30 @@ coils:
     number: 2
     pulse_ms: 100
   c_flipper_right_hold:
-    number: 5
+    number: 3
     pulse_ms: 100
     hold_power: 3
     #allow_enable: true
     
+  # ---------------
+  # HARDWARE / COIL / PLAYFIELD
+  # ---------------
   c_trough_eject:
-    number: 1
+    number: 4
     label:
     tags:
     pulse_ms: 25
   c_plunger_lane:
-    number: 3
+    number: 5
     label:
     tags:
     pulse_ms: 25
   c_slingshot_left:
-    number: 7
+    number: 6
     label:
     tags:
   c_slingshot_right:
-    number: 6
+    number: 7
     label:
     tags:
 
