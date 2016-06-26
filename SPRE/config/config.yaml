@@ -113,13 +113,13 @@ assets:
         default:
             load: preload
 #            
-sounds:
-    SPRE_1:
-        target: music
-    SPRE_2:
-        target: music
-    SPRE_3:
-        target: music
+#sounds:
+#    SPRE_1:
+#        target: music
+#    SPRE_2:
+#        target: music
+#    SPRE_3:
+#        target: music
 
 videos:
   #SPRE_AttractMode_1:
@@ -211,19 +211,31 @@ coils:
   
   c_flipper_left_main:
     number: 0
-    pulse_ms: 100
+    #pulse_ms: 100
+    # NEW FL-17636
+    pulse_ms: 50
+    pulse_power: 6
   c_flipper_left_hold:
     number: 4
     pulse_ms: 100
-    hold_power: 4
+    #pulse_ms: 25
+    pulse_power: 1
+    #hold_power: 4
+    # NEW FL-17636
+    hold_power: 8
     #allow_enable: true
   c_flipper_right_main:
     number: 2
     pulse_ms: 100
+    # NEW FL-17636
+    #pulse_ms: 50
   c_flipper_right_hold:
     number: 5
     pulse_ms: 100
-    hold_power: 3
+    pulse_power: 1
+    #hold_power: 4
+    # NEW FL-17636
+    hold_power: 8
     #allow_enable: true
     
   c_trough_eject:
