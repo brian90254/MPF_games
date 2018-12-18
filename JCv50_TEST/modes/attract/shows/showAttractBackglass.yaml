@@ -1,0 +1,13 @@
+#show_version=5
+
+- time: 0
+  events:
+    eventShowAttractBackglass1
+        
+- time: '+4'
+  events:
+    eventShowAttractBackglass2
+        
+- time: '+4'
+
+

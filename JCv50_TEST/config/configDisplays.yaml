@@ -1,0 +1,116 @@
+#config_version=5
+
+# ---------------
+# DISPLAYS::KIVY
+# ---------------
+kivy_config:
+  kivy:
+    desktop: 1
+    exit_on_escape: true
+    pause_on_minimize: 0
+    log_dir:
+    window_icon:
+  graphics:
+    borderless: true
+    window_state: visible
+    # visible, hidden, maximized, minimized
+    fbo: hardware
+    # hardware, software, force-hardware
+    left: 0
+    top: 0
+    width: 3286
+    height: 1180
+    maxfps: 30
+    multisamples: 2
+    position: custom
+    # auto, custom
+    show_cursor: false
+    resizable: false
+    rotation: 0
+    
+# -----------------
+# DISPLAYS::WINDOWS
+# -----------------
+window:
+  width: 3286
+  height: 1180
+  title: My first FAST game
+  resizable: true
+  fullscreen: false
+  #fullscreen: true
+  borderless: true
+  exit_on_escape: true
+  no_window: false
+
+# -----------------
+# DISPLAYS::DISPLAYS
+# -----------------
+displays:
+  window:
+    width: 3286
+    height: 1180
+    default: true
+    round_anchor_x: left
+    round_anchor_y: bottom
+  displayDMD:
+    width: 170
+    height: 96
+  displayBackglass:
+    width: 1920
+    height: 1080
+    
+# -----------------
+# DISPLAYS::SLIDES
+# -----------------
+slides:
+  slideLayout:
+    background_color: yellow
+    widgets:
+      - type: display
+        width: 1366
+        height: 768
+        source_display: displayDMD
+        x: 0
+        y: 412
+        anchor_y: bottom
+        anchor_x: left
+        effects:
+          - type: pixelate
+            pixel_size: 8
+          - type: gain
+            gain: 1.0
+          - type: dot_filter
+            dots_x: 170
+            dots_y: 96
+            background_color: 101010
+            dot_size: 0.87
+      - type: display
+        width: 1920
+        height: 1080
+        source_display: displayBackglass
+        x: 1366
+        y: 52
+        anchor_y: bottom
+        anchor_x: left
+        
+  slideDisplayDMD:
+    background_color: green
+    widgets:
+      - type: text
+        text: this is a slide in the displayDMD
+
+  slideDisplayBackglass:
+    background_color: blue
+    widgets:
+    - type: text
+      text: this is a slide in the DisplayBackglass
+
+slide_player:
+  mc_ready:
+    slideLayout:
+      target: window
+    slideDisplayDMD:
+      target: displayDMD
+    slideDisplayBackglass:
+      target: displayBackglass
+      

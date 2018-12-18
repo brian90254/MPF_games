@@ -1,0 +1,48 @@
+#config_version=5
+
+# ************************************
+# SOUNDS
+# ************************************
+sounds:  
+# ---------------------
+# SOUNDS::MUSIC::ATTRACT
+# ---------------------
+  musicJupiterOneAttract:
+    file: JupiterCrush_Track_1_JupiterOne.wav
+    track: music
+    volume: 0.5
+    mode_end_action: stop
+    
+  musicEuropaAttract:
+    file: JupiterCrush_Track_2_Europa.wav
+    track: music
+    volume: 0.5
+    mode_end_action: stop
+    
+  musicGanymedeAttract:
+    file: JupiterCrush_Track_3_Ganymede.wav
+    track: music
+    volume: 0.5
+    mode_end_action: stop
+    
+  musicCallistoAttract:
+    file: JupiterCrush_Track_4_Callisto.wav
+    track: music
+    volume: 0.5
+    mode_end_action: stop
+
+
+# ---------------------
+# SOUNDS::POOLS
+# ---------------------
+sound_pools:
+  poolMusicAttract:
+    type: random_force_all
+    track: music
+    sounds:
+      musicJupiterOneAttract
+      musicEuropaAttract
+      musicGanymedeAttract
+      musicCallistoAttract
+      
+      
